@@ -1,0 +1,927 @@
+@media only screen and (min-width: 769px) {
+	
+
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    padding: 2vw 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+header.fixed {
+    background: #100d20;
+    padding: 0.7vw 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+    margin-right: 5em;
+}
+
+
+
+header .logo-text {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    flex-grow: 1;
+}
+
+header .logo-text p {
+    margin-left: 50%;
+	width: 100%;
+    font-size: 3em;
+
+}
+
+.menucontrols {
+    float: right;
+}
+
+.menucontrols a {
+    float: left;
+    width: 4vw;
+    height: 4vw;
+    background: #100d20;
+    color: #fff;
+    font-size: 1.4vw;
+}
+
+a.hidemenu {
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+    width: 2vw;
+    height: 2vw;
+    color: #000;
+    font-size: 2.2vw;
+    transition: 1.6s;
+    -webkit-transition: 1.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav {
+    position: fixed;
+    right: -30vw;
+    top: 0;
+    background: #fff;
+    z-index: 99;
+    width: 25vw;
+    height: 100%;
+    padding: 5vw 5vw 5vw 5vw;
+    overflow-y: auto;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    opacity: 0;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+}
+
+nav.active {
+    right: 0;
+}
+
+nav ul {
+    font-size: 10px;
+}
+
+nav ul li {
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+nav ul li a {
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #000;
+}
+
+nav ul li.active a {
+    border-bottom: 1px solid #000;
+}
+
+.banner {
+    padding: 20vw 0 14vw 0;
+    background-size: cover !important;
+    font-family: 'Manrope', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+
+.about {
+    padding: 3vw 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.about .text {
+    float: left;
+    width: 60%;
+}
+
+.about .text h2 {
+    color: #000;
+    font-size: 4.3vw;
+    margin-bottom: 2vw;
+}
+
+.about .text p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 150%;
+    margin-bottom: 3vw;
+}
+
+.about .image {
+    float: right;
+    width: 35%;
+}
+
+.about .image img {
+    float: left;
+    width: 100%;
+    height: auto;
+    filter: grayscale(40%);
+    aspect-ratio: 2/2.7;
+    object-fit: cover;
+    object-position: center;
+}
+
+.services {
+    padding: 6vw 0 3vw 0;
+    background: #eee;
+    font-family: 'Manrope', sans-serif;
+}
+
+.services h2 {
+    color: #000;
+    font-size: 4.3vw;
+    margin-bottom: 3vw;
+}
+
+.serviceitemswrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.serviceitemswrap .item {
+    flex-basis: 48%;
+    margin-bottom: 5vw;
+}
+
+.serviceitemswrap .item .icon {
+    float: left;
+    width: 8vw;
+    height: 8vw;
+    background: #ddd;
+}
+
+.serviceitemswrap .item .icon span {
+    color: #000;
+    font-size: 4vw;
+    transform: scale(1);
+}
+
+.serviceitemswrap .item:hover .icon span {
+    transform: scale(0.7);
+}
+
+.serviceitemswrap .item .text {
+    float: left;
+	text-align: justify;
+    width: 100%;
+    padding: 1vw 0 0 9vw;
+}
+
+.serviceitemswrap .item .text h3 {
+    color: #000;
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+}
+
+.serviceitemswrap .item .text p {
+    color: #000;
+    font-size: 1.2vw;
+}
+
+.contact {
+    background: #eee;
+    padding: 6vw 0 6vw 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.contact h2 {
+    color: #000;
+    font-size: 4.3vw;
+    margin-bottom: 1vw;
+}
+
+.contact h5 {
+    color: #000;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.contact h5 a {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.contact form {
+    margin-top: 2vw;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    float: left;
+    width: 30%;
+    height: 4.5vw;
+    background: #fff;
+    border: none;
+    padding: 0 0 0 1.5vw;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.contact form input[type="text"]:focus,
+.contact form input[type="email"]:focus,
+.contact form textarea:focus {
+    outline: 2px solid #2175f3;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 10vw;
+    padding: 1.5vw;
+}
+
+.contact form button {
+    float: left;
+    width: auto;
+    height: 6vw;
+    cursor: pointer;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: 'Manrope', sans-serif;
+    padding: 0 2vw;
+}
+
+footer {
+    background: #eee;
+    padding: 3vw 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+footer .copyright {
+    float: left;
+    color: #000;
+    font-size: 1.3vw;
+}
+
+footer .copyright a {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+footer .copyright span.company {
+    font-size: 1vw;
+}
+
+footer .copyright span.company a {
+    border-bottom: none;
+}
+
+footer .social {
+    float: right;
+    color: #000;
+    font-size: 1.3vw;
+}
+
+footer .social a {
+    float: left;
+    color: #000;
+    margin-left: 1vw;
+}
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 55px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+  }
+  .btn-wsp:hover{
+    background: #20ba5a;
+    box-shadow: 0 15px 20px;
+    transform: translateY(-7px);
+  }
+  .item .whatsapp-button-services {
+	float: none;
+	margin-left: 25%;
+	margin-top: 5%;
+    width: 150px; 
+    height: 50px; 
+    line-height: 50px;
+    background: #25d366;
+	border-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 300ms ease;
+}
+
+.item .whatsapp-button-services:hover {
+    background: #20ba5a;
+	color: #FFF;
+    box-shadow: 0 15px 20px;
+    transform: translateY(-7px);
+	width: 50%; 
+    height: 15%; 
+}
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: carousel 20s infinite;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.banner .text-presentation {
+    float: center;
+    width: 100%;
+}
+
+.banner .text-presentation h1 {
+    color: #fff;
+    font-size: 5.8vw;
+    line-height: 100%;
+    margin-bottom: 3vw;
+}
+
+.banner .text-presentation h3 {
+    color: #fff;
+    font-size: 3.5vw;
+    line-height: 120%;
+    margin-bottom: 2vw;
+    font-weight: bold;
+}
+
+.banner .text-presentation h1 span,
+.banner .text-presentation h3 span {
+    color: #000;
+}
+
+.banner .text-presentation a {
+    float: center;
+    padding: 1.3vw 3vw;
+    background: #000;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.banner .text-presentation a span {
+    margin-left: 0.7vw;
+}
+
+.banner .text-presentation a:hover {
+    background: #fff;
+    color: #000;
+}
+.text-presentation{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+}
+
+.text-presentation .btn {
+	
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5vw; 
+    text-decoration: none;
+   
+}
+
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+}
+@media only screen and (max-width: 768px) {
+	header {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 99;
+		font-family: 'Manrope', sans-serif;
+		font-weight: bold;
+		padding: 2vw 0;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+	}
+	
+	header.fixed {
+		background: #100d20;
+		padding: 0.7vw 0;
+	}
+	
+	header .logo {
+		display: flex;
+		align-items: center;
+	}
+	
+	header .logo img {
+		max-width: 120px;
+		width: 100%;
+		margin-right: 5em;
+	}
+	
+	header .logo-text {
+		display: flex;
+		flex-direction: column;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		color: #fff;
+		flex-grow: 1;
+	}
+	
+	header .logo-text p {
+		margin: 0;
+		width: 100%;
+		font-size: 2rem;
+	
+	}
+	
+	.menucontrols {
+		float: right;
+		width: 2%;
+	}
+	
+	.menucontrols a {
+		float: left;
+		width: 4vw;
+		height: 4vw;
+		background: #100d20;
+		color: #fff;
+		font-size: 1.4vw;
+	}
+	
+	a.hidemenu {
+		position: fixed;
+		right: 1vw;
+		top: 1vw;
+		width: 2vw;
+		height: 2vw;
+		color: #000;
+		font-size: 2.2vw;
+		transition: 1.6s;
+		-webkit-transition: 1.6s;
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	nav {
+		position: fixed;
+		right: -30vw;
+		top: 0;
+		background: #fff;
+		z-index: 99;
+		width: 25vw;
+		height: 100%;
+		padding: 5vw 5vw 5vw 5vw;
+		overflow-y: auto;
+		transition: 0.6s;
+		-webkit-transition: 0.6s;
+		opacity: 0;
+		box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+	}
+	
+	nav.active {
+		right: 0;
+	}
+	
+	nav ul {
+		font-size: 10px;
+	}
+	
+	nav ul li {
+		font-size: 1.2vw;
+		margin-bottom: 2vw;
+	}
+	
+	nav ul li a {
+		color: #000;
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		transition: 0.6s;
+		-webkit-transition: 0.6s;
+	}
+	
+	nav ul li a:hover {
+		border-bottom: 1px solid #000;
+	}
+	
+	nav ul li.active a {
+		border-bottom: 1px solid #000;
+	}
+	
+	.banner {
+		position: relative;
+		height: 100vh;
+		overflow: hidden;
+	}
+	
+	.carousel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		animation: carousel 20s infinite;
+	}
+	
+	.carousel-item {
+		flex: 0 0 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	.banner .text-presentation {
+		float: center;
+		width: 100%;
+	}
+	
+	.banner .text-presentation h1 {
+		color: #fff;
+		font-size: 350%;
+		line-height: 100%;
+		margin-bottom: 3vw;
+	}
+	
+	.banner .text-presentation h3 {
+		color: #fff;
+		font-size: 200%;
+		line-height: 120%;
+		margin-bottom: 2vw;
+		font-weight: bold;
+	}
+	
+	.banner .text-presentation h1 span,
+	.banner .text-presentation h3 span {
+		color: #000;
+	}
+	
+	.banner .text-presentation a {
+		float: center;
+		padding: 1.3vw 3vw;
+		background: #000;
+		color: #fff;
+		font-size: 75%;
+	}
+	
+	.banner .text-presentation a span {
+		margin-left: 0.7vw;
+	}
+	
+	.banner .text-presentation a:hover {
+		background: #fff;
+		color: #000;
+	}
+	.text-presentation{
+		position: relative;
+		z-index: 1;
+		color: #fff;
+		text-align: center;
+	}
+	
+	.text-presentation .btn {
+		
+		display: inline-block;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		padding: 10px 20px;
+		font-size: 1.5vw; 
+		text-decoration: none;
+	   
+	}
+	
+	@keyframes carousel {
+		0% { transform: translateX(0); }
+		25% { transform: translateX(-100%); }
+		50% { transform: translateX(-200%); }
+		100% { transform: translateX(0); }
+	}
+	
+	
+	.brands {
+		background: #eee;
+		padding: 2vw 0;
+	}
+	
+	.brands img {
+		float: left;
+		width: 12%;
+		height: auto;
+	}
+	
+	.about {
+		padding: 3vw 0;
+		font-family: 'Manrope', sans-serif;
+	}
+	
+	.about .text {
+		float: left;
+		width: 60%;
+	}
+	
+	.about .text h2 {
+		color: #000;
+		font-size: 4.3vw;
+		margin-bottom: 2vw;
+	}
+	
+	.about .text p {
+		font-size: 1.2rem;
+		text-align: justify;
+		line-height: 150%;
+		margin-bottom: 3vw;
+	}
+	
+	.about .image {
+		float: right;
+		width: 35%;
+	}
+	
+	.about .image img {
+		float: left;
+		width: 100%;
+		height: auto;
+		filter: grayscale(40%);
+		aspect-ratio: 2/2.7;
+		object-fit: cover;
+		object-position: center;
+	}
+	
+	.services {
+		padding: 6vw 0 3vw 0;
+		background: #eee;
+		font-family: 'Manrope', sans-serif;
+	}
+	
+	.services h2 {
+		color: #000;
+		font-size: 4.3vw;
+		margin-bottom: 3vw;
+	}
+	
+	.serviceitemswrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.serviceitemswrap .item {
+		flex-basis: 48%;
+		margin-bottom: 5vw;
+	}
+	
+	.serviceitemswrap .item .icon {
+		float: left;
+		width: 8vw;
+		height: 8vw;
+		background: #ddd;
+	}
+	
+	.serviceitemswrap .item .icon span {
+		color: #000;
+		font-size: 4vw;
+		transform: scale(1);
+	}
+	
+	.serviceitemswrap .item:hover .icon span {
+		transform: scale(0.7);
+	}
+	
+	.serviceitemswrap .item .text {
+		float: left;
+		text-align: justify;
+		width: 100%;
+		padding: 1vw 0 0 9vw;
+	}
+	
+	.serviceitemswrap .item .text h3 {
+		color: #000;
+		font-size: 1.6vw;
+		margin-bottom: 1vw;
+	}
+	
+	.serviceitemswrap .item .text p {
+		color: #000;
+		font-size: 1.2vw;
+	}
+	
+	.contact {
+		background: #eee;
+		padding: 6vw 0 6vw 0;
+		font-family: 'Manrope', sans-serif;
+	}
+	
+	.contact h2 {
+		color: #000;
+		font-size: 4.3vw;
+		margin-bottom: 1vw;
+	}
+	
+	.contact h5 {
+		color: #000;
+		font-size: 1.3vw;
+		margin-bottom: 1vw;
+	}
+	
+	.contact h5 a {
+		color: #000;
+		border-bottom: 1px solid #000;
+	}
+	
+	.contact form {
+		margin-top: 2vw;
+	}
+	
+	.contact form input[type="text"],
+	.contact form input[type="email"],
+	.contact form textarea {
+		float: left;
+		width: 30%;
+		height: 4.5vw;
+		background: #fff;
+		border: none;
+		padding: 0 0 0 1.5vw;
+		border-radius: 0;
+		-webkit-border-radius: 0;
+		font-family: 'Manrope', sans-serif;
+		font-size: 1.2vw;
+		margin-bottom: 2vw;
+	}
+	
+	.contact form input[type="text"]:focus,
+	.contact form input[type="email"]:focus,
+	.contact form textarea:focus {
+		outline: 2px solid #2175f3;
+	}
+	
+	.contact form textarea {
+		width: 100%;
+		height: 10vw;
+		padding: 1.5vw;
+	}
+	
+	.contact form button {
+		float: left;
+		width: auto;
+		height: 6vw;
+		cursor: pointer;
+		background: #000;
+		text-align: center;
+		color: #fff;
+		font-size: 1.2vw;
+		font-family: 'Manrope', sans-serif;
+		padding: 0 2vw;
+	}
+	
+	footer {
+		background: #eee;
+		padding: 3vw 0;
+		font-family: 'Manrope', sans-serif;
+	}
+	
+	footer .copyright {
+		float: left;
+		color: #000;
+		font-size: 1.3vw;
+	}
+	
+	footer .copyright a {
+		color: #000;
+		border-bottom: 1px solid #000;
+	}
+	
+	footer .copyright span.company {
+		font-size: 1vw;
+	}
+	
+	footer .copyright span.company a {
+		border-bottom: none;
+	}
+	
+	footer .social {
+		float: right;
+		color: #000;
+		font-size: 1.3vw;
+	}
+	
+	footer .social a {
+		float: left;
+		color: #000;
+		margin-left: 1vw;
+	}
+	.btn-wsp{
+		position:fixed;
+		width:60px;
+		height:60px;
+		line-height: 55px;
+		bottom:25px;
+		right:25px;
+		background:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:35px;
+		box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+		z-index:100;
+		transition: all 300ms ease;
+	  }
+	  .btn-wsp:hover{
+		background: #20ba5a;
+		box-shadow: 0 15px 20px;
+		transform: translateY(-7px);
+	  }
+	  .item .whatsapp-button-services {
+		float: none;
+		margin-left: 25%;
+		margin-top: 5%;
+		width: 150px; 
+		height: 50px; 
+		line-height: 50px;
+		background: #25d366;
+		border-color: #000;
+		color: #FFF;
+		text-align: center;
+		font-size: 16px;
+		text-decoration: none;
+		display: inline-block;
+		transition: all 300ms ease;
+	}
+	
+	.item .whatsapp-button-services:hover {
+		background: #20ba5a;
+		color: #FFF;
+		box-shadow: 0 15px 20px;
+		transform: translateY(-7px);
+		width: 50%; 
+		height: 15%; 
+	}	
+}
